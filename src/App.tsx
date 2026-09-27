@@ -44,7 +44,7 @@ export const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-dark-950 text-slate-100 flex flex-col font-sans selection:bg-brand-500/30 selection:text-white">
+    <div className="min-h-screen bg-[#F5F7FA] dark:bg-dark-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans selection:bg-brand-500 selection:text-white">
       {/* Top Header */}
       <Header
         onOpenSearch={() => setIsSearchOpen(true)}
@@ -86,17 +86,17 @@ export const App: React.FC = () => {
           </div>
 
           {/* Footer */}
-          <footer className="border-t border-slate-800/80 bg-dark-950 py-6 px-6 text-center text-xs text-slate-500 font-mono">
+          <footer className="border-t border-slate-200 dark:border-slate-800/80 bg-white dark:bg-dark-950 py-6 px-6 text-center text-xs text-slate-600 dark:text-slate-400 font-sans">
             <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
               <p>
                 AgenticHub © {new Date().getFullYear()} Sambit Baliarsingh · Designed for Continuous Technical Depth.
               </p>
-              <div className="flex items-center gap-4 text-slate-400">
+              <div className="flex items-center gap-4 text-slate-600 dark:text-slate-400">
                 <a
                   href="https://github.com/emsambit/agentichub"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-brand-600 dark:hover:text-white transition-colors"
                 >
                   GitHub Repository
                 </a>
@@ -105,7 +105,7 @@ export const App: React.FC = () => {
                   href="https://www.linkedin.com/in/sambit-baliarsingh-8322bbb1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-cyan-400 transition-colors"
+                  className="hover:text-brand-600 dark:hover:text-cyan-400 transition-colors"
                 >
                   LinkedIn
                 </a>

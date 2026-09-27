@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { UserProgressState, Bookmark, UserNote } from '../types';
 
-const STORAGE_KEY = 'agentichub_user_progress_v1';
+const STORAGE_KEY = 'agentichub_user_progress_v2';
 
 const defaultState: UserProgressState = {
   completedLessons: ['intro-agentic-arch', 'attention-mechanisms'],
@@ -44,7 +44,7 @@ const defaultState: UserProgressState = {
   dailyMinutesGoal: 60,
   learningStreak: 14,
   lastActiveDate: new Date().toISOString().split('T')[0],
-  theme: 'dark',
+  theme: 'light',
 };
 
 export function applyTheme(theme: 'dark' | 'light') {
@@ -84,14 +84,14 @@ export function useProgress() {
   const [progress, setProgress] = useState<UserProgressState>(getStoredProgress);
 
   useEffect(() => {
-    applyTheme(progress.theme || 'dark');
+    applyTheme(progress.theme || 'light');
   }, [progress.theme]);
 
   useEffect(() => {
     const handleUpdate = () => {
       const current = getStoredProgress();
       setProgress(current);
-      applyTheme(current.theme || 'dark');
+      applyTheme(current.theme || 'light');
     };
     window.addEventListener('agentichub_progress_updated', handleUpdate);
     return () => window.removeEventListener('agentichub_progress_updated', handleUpdate);

@@ -9,26 +9,37 @@ export default {
     extend: {
       colors: {
         dark: {
-          950: '#07090E',
-          900: '#0B0F19',
-          850: '#0F1626',
-          800: '#141D32',
-          700: '#1E293B',
-          600: '#334155',
-          500: '#475569',
+          950: '#0B0F17',
+          900: '#111827',
+          850: '#161F30',
+          800: '#1F2937',
+          750: '#2D3748',
+          700: '#374151',
+          600: '#4B5563',
+          500: '#6B7280',
         },
         brand: {
-          50: '#EEF2FF',
-          100: '#E0E7FF',
-          200: '#C7D2FE',
-          300: '#A5B4FC',
-          400: '#818CF8',
-          500: '#6366F1',
-          600: '#4F46E5',
-          700: '#4338CA',
-          800: '#3730A3',
-          900: '#312E81',
-          accent: '#06B6D4',
+          50: '#F0FDF4',
+          100: '#E8F5E9', // Nexcent green tint
+          200: '#C8E6C9',
+          300: '#A5D6A7',
+          400: '#81C784',
+          500: '#4CAF4F', // Nexcent primary green
+          600: '#43A047',
+          700: '#388E3C', // Nexcent dark green
+          800: '#2E7D32',
+          900: '#1B5E20',
+          accent: '#263238', // Nexcent charcoal heading
+        },
+        nexcent: {
+          canvas: '#F5F7FA', // Nexcent soft canvas gray
+          charcoal: '#263238', // Nexcent deep charcoal headings
+          gray: '#4D5E6A', // Nexcent body text
+          lightgray: '#717171', // Nexcent muted text
+          silver: '#89939E',
+          tint: '#E8F5E9', // Nexcent soft green tint
+          primary: '#4CAF4F', // Nexcent primary green
+          darkgreen: '#2E7D32',
         }
       },
       fontFamily: {
@@ -36,10 +47,10 @@ export default {
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
       },
       boxShadow: {
-        'glow-indigo': '0 0 25px -5px rgba(99, 102, 241, 0.25)',
-        'glow-cyan': '0 0 25px -5px rgba(6, 182, 212, 0.25)',
-        'glow-emerald': '0 0 25px -5px rgba(16, 185, 129, 0.25)',
-        'glow-purple': '0 0 25px -5px rgba(139, 92, 246, 0.25)',
+        'figma-card': '0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02)',
+        'figma-hover': '0 12px 24px -4px rgba(76, 175, 79, 0.12), 0 4px 8px -2px rgba(0, 0, 0, 0.04)',
+        'figma-green': '0 8px 20px -4px rgba(76, 175, 79, 0.35)',
+        'glow-green': '0 0 25px -5px rgba(76, 175, 79, 0.35)',
       },
       animation: {
         'pulse-subtle': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',

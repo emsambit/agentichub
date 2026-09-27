@@ -31,15 +31,15 @@ export const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onCloseMobile })
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     `flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium transition-all ${
       isActive
-        ? 'bg-blue-600 text-white font-semibold shadow-lg shadow-blue-600/30'
-        : 'text-slate-400 hover:text-slate-200 hover:bg-dark-850'
+        ? 'bg-brand-500 text-white font-semibold shadow-md shadow-brand-500/25'
+        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-dark-850'
     }`;
 
   const regularLinkClass = ({ isActive }: { isActive: boolean }) =>
     `flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs font-medium transition-all ${
       isActive
-        ? 'bg-blue-600/15 text-blue-400 font-semibold border border-blue-500/30'
-        : 'text-slate-400 hover:text-slate-200 hover:bg-dark-850'
+        ? 'bg-brand-50 dark:bg-brand-500/15 text-brand-700 dark:text-brand-300 font-semibold border border-brand-200 dark:border-brand-500/30'
+        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-dark-850'
     }`;
 
   return (
@@ -54,7 +54,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onCloseMobile })
 
       {/* Sidebar Container */}
       <aside
-        className={`fixed top-16 bottom-0 left-0 z-40 w-64 border-r border-slate-800/80 bg-dark-950/95 backdrop-blur-md flex flex-col justify-between transition-transform duration-300 ease-in-out md:translate-x-0 ${
+        className={`fixed top-16 bottom-0 left-0 z-40 w-64 border-r border-slate-200 dark:border-slate-800/80 bg-white/95 dark:bg-dark-950/95 backdrop-blur-md flex flex-col justify-between transition-transform duration-300 ease-in-out md:translate-x-0 ${
           isMobileOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -154,26 +154,26 @@ export const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onCloseMobile })
         </div>
 
         {/* Sidebar Footer Card: About Sambit */}
-        <div className="p-3 border-t border-slate-800/80 bg-dark-900/80">
+        <div className="p-3 border-t border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-dark-900/80">
           <Link
             to="/profile"
             onClick={onCloseMobile}
-            className="flex items-center justify-between p-2.5 rounded-xl border border-slate-800/90 bg-dark-850 hover:bg-dark-800 hover:border-slate-700 transition-all group"
+            className="flex items-center justify-between p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-dark-850 hover:border-brand-300 dark:hover:border-slate-700 transition-all group shadow-sm"
           >
             <div className="flex items-center gap-2.5 min-w-0">
               <img
                 src={profileMeta.avatarUrl}
                 alt={profileMeta.name}
-                className="w-8 h-8 rounded-full object-cover border border-slate-700 flex-shrink-0"
+                className="w-8 h-8 rounded-full object-cover border border-slate-300 dark:border-slate-700 flex-shrink-0"
               />
               <div className="min-w-0">
-                <p className="text-xs font-bold text-white group-hover:text-blue-400 transition-colors truncate">
+                <p className="text-xs font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors truncate">
                   About Sambit
                 </p>
-                <p className="text-[10px] text-slate-400 truncate">Creator of AgenticHub</p>
+                <p className="text-[10px] text-slate-500 dark:text-slate-400 truncate">Creator of AgenticHub</p>
               </div>
             </div>
-            <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-white group-hover:translate-x-0.5 transition-all flex-shrink-0" />
+            <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-brand-600 dark:group-hover:text-white group-hover:translate-x-0.5 transition-all flex-shrink-0" />
           </Link>
         </div>
       </aside>

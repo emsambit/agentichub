@@ -4,17 +4,17 @@
 
 @layer base {
   :root {
-    color-scheme: dark light;
+    color-scheme: light dark;
   }
   
-  html.dark body {
-    background-color: #07090e;
-    color: #e2e8f0;
+  html.light body {
+    background-color: #F5F7FA;
+    color: #4D5E6A;
   }
 
-  html.light body {
-    background-color: #f8fafc;
-    color: #0f172a;
+  html.dark body {
+    background-color: #0B0F17;
+    color: #E2E8F0;
   }
   
   body {
@@ -27,151 +27,379 @@
   }
 }
 
-/* Custom scrollbars (Dark mode default) */
+/* Custom scrollbars */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
-::-webkit-scrollbar-track {
-  background: #0b0f19;
+html.light ::-webkit-scrollbar-track {
+  background: #F5F7FA;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #1e293b;
+html.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
   border-radius: 9999px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
 }
 
-/* Glassmorphism utilities */
-.glass-panel {
-  background: rgba(15, 22, 38, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+html.dark ::-webkit-scrollbar-track {
+  background: #0B0F17;
 }
 
-.glass-card {
-  background: rgba(20, 29, 50, 0.6);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+html.dark ::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 9999px;
 }
 
-.glass-card:hover {
-  border-color: rgba(99, 102, 241, 0.35);
-  box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.15);
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #374151;
 }
 
 /* ========================================================================= */
-/* LIGHT MODE STYLING & HIGH-CONTRAST OVERRIDES                              */
+/* FIGMA NEXCENT DESIGN SYSTEM TOKENS                                        */
+/* ========================================================================= */
+
+/* Figma-style card */
+.figma-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E4E7EC;
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.figma-card:hover {
+  box-shadow: 0 12px 24px -4px rgba(76, 175, 79, 0.12), 0 4px 8px -2px rgba(0, 0, 0, 0.04);
+  border-color: #A5D6A7;
+}
+
+html.dark .figma-card {
+  background-color: #111827 !important;
+  border-color: #1F2937 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark .figma-card:hover {
+  border-color: rgba(76, 175, 79, 0.4) !important;
+  box-shadow: 0 12px 24px -4px rgba(76, 175, 79, 0.15) !important;
+}
+
+/* Figma primary green button */
+.btn-nexcent {
+  background-color: #4CAF4F !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(76, 175, 79, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-nexcent *,
+.btn-nexcent span {
+  color: #FFFFFF !important;
+}
+
+.btn-nexcent:hover {
+  background-color: #388E3C !important;
+  box-shadow: 0 6px 16px rgba(76, 175, 79, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Figma green badge / pill */
+.badge-green {
+  background-color: #E8F5E9 !important;
+  color: #2E7D32 !important;
+  border: 1px solid #C8E6C9 !important;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+
+/* ========================================================================= */
+/* LIGHT MODE STYLING & HIGH-PRECISION FIGMA OVERRIDES                       */
 /* ========================================================================= */
 
 html.light header {
-  background-color: rgba(255, 255, 255, 0.9) !important;
-  border-color: #e2e8f0 !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #E4E7EC !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
 }
 
 html.light aside {
-  background-color: rgba(255, 255, 255, 0.98) !important;
-  border-color: #e2e8f0 !important;
+  background-color: #FFFFFF !important;
+  border-color: #E4E7EC !important;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.02) !important;
 }
 
 html.light footer {
-  background-color: #ffffff !important;
-  border-color: #e2e8f0 !important;
+  background-color: #FFFFFF !important;
+  border-color: #E4E7EC !important;
 }
 
-/* Surface backgrounds */
+/* Surface backgrounds in light mode */
 html.light [class*="bg-dark-950"] {
-  background-color: #ffffff !important;
+  background-color: #FFFFFF !important;
 }
 
 html.light [class*="bg-dark-900"] {
-  background-color: #ffffff !important;
+  background-color: #FFFFFF !important;
 }
 
 html.light [class*="bg-dark-850"] {
-  background-color: #f8fafc !important;
+  background-color: #F8FAFC !important;
 }
 
 html.light [class*="bg-dark-800"] {
-  background-color: #f1f5f9 !important;
+  background-color: #F1F5F9 !important;
 }
 
 html.light [class*="bg-dark-750"] {
-  background-color: #e2e8f0 !important;
+  background-color: #E2E8F0 !important;
 }
 
 /* Gradient card fixes in light mode */
-html.light [class*="from-dark-900"] {
-  --tw-gradient-from: #ffffff !important;
+html.light [class*="from-dark-900"],
+html.light [class*="from-blue-900"],
+html.light [class*="from-indigo-950"] {
+  --tw-gradient-from: #FFFFFF !important;
   --tw-gradient-to: rgb(255 255 255 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 html.light [class*="via-dark-850"] {
-  --tw-gradient-to: rgb(248 250 252 / 0) !important;
-  --tw-gradient-stops: var(--tw-gradient-from), #f8fafc, var(--tw-gradient-to) !important;
+  --tw-gradient-to: rgb(245 247 250 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #F5F7FA, var(--tw-gradient-to) !important;
 }
 
 html.light [class*="to-dark-950"],
-html.light [class*="to-dark-900"] {
-  --tw-gradient-to: #f1f5f9 !important;
+html.light [class*="to-dark-900"],
+html.light [class*="to-slate-900"] {
+  --tw-gradient-to: #F5F7FA !important;
 }
 
-/* Borders */
+/* Borders in light mode */
 html.light [class*="border-slate-800"],
 html.light [class*="border-slate-700"] {
-  border-color: #e2e8f0 !important;
+  border-color: #E4E7EC !important;
 }
 
-/* Text colors */
-html.light .text-white {
-  color: #0f172a !important;
+/* Text colors in light mode */
+html.light {
+  color: #263238;
 }
 
-html.light .text-slate-100 {
-  color: #0f172a !important;
+html.light body {
+  background-color: #F5F7FA !important;
+  color: #263238 !important;
 }
 
-html.light .text-slate-200 {
-  color: #1e293b !important;
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6 {
+  color: #263238 !important;
 }
 
-html.light .text-slate-300 {
-  color: #334155 !important;
+html.light p {
+  color: #4D5E6A !important;
 }
 
-html.light .text-slate-400 {
-  color: #64748b !important;
+.text-nexcent-charcoal,
+html.light .text-nexcent-charcoal {
+  color: #263238 !important;
+}
+
+html.dark .text-nexcent-charcoal {
+  color: #FFFFFF !important;
+}
+
+.text-nexcent-gray,
+html.light .text-nexcent-gray {
+  color: #4D5E6A !important;
+}
+
+html.dark .text-nexcent-gray {
+  color: #94A3B8 !important;
+}
+
+.bg-nexcent-canvas,
+html.light .bg-nexcent-canvas {
+  background-color: #F5F7FA !important;
+}
+
+html.dark .bg-nexcent-canvas {
+  background-color: #0B0F17 !important;
+}
+
+html.light .text-slate-900,
+html.light .text-slate-800 {
+  color: #263238 !important;
+}
+
+html.light .text-slate-700 {
+  color: #263238 !important;
+}
+
+html.light .text-slate-600 {
+  color: #4D5E6A !important;
 }
 
 html.light .text-slate-500 {
-  color: #94a3b8 !important;
+  color: #5A6A78 !important;
 }
 
-/* Scrollbars */
-html.light ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+html.light .text-slate-400 {
+  color: #717171 !important;
 }
 
-html.light ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+html.light .text-slate-300 {
+  color: #4D5E6A !important;
 }
 
-html.light ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+/* Nexcent green brand text in light mode */
+html.light .text-brand-500 {
+  color: #4CAF4F !important;
+}
+html.light .text-brand-600 {
+  color: #43A047 !important;
+}
+html.light .text-brand-700 {
+  color: #388E3C !important;
+}
+html.light .text-brand-800 {
+  color: #2E7D32 !important;
+}
+
+/* Explicit button text safeguards */
+.btn-nexcent,
+html.light .btn-nexcent,
+html.dark .btn-nexcent {
+  background-color: #4CAF4F !important;
+  color: #FFFFFF !important;
+}
+
+.btn-nexcent *,
+.btn-nexcent span,
+.btn-nexcent svg,
+html.light .btn-nexcent *,
+html.light .btn-nexcent span,
+html.light .btn-nexcent svg {
+  color: #FFFFFF !important;
+}
+
+.btn-nexcent:hover,
+html.light .btn-nexcent:hover,
+html.dark .btn-nexcent:hover {
+  background-color: #388E3C !important;
+}
+
+/* Primary green overrides in light mode */
+html.light .bg-blue-600 {
+  background-color: #4CAF4F !important;
+}
+
+html.light .hover\:bg-blue-500:hover {
+  background-color: #388E3C !important;
+}
+
+html.light .text-blue-400 {
+  color: #2E7D32 !important;
+}
+
+html.light .text-cyan-400 {
+  color: #388E3C !important;
+}
+
+html.light .border-blue-500 {
+  border-color: #4CAF4F !important;
+}
+
+html.light .shadow-blue-600\/30 {
+  box-shadow: 0 4px 14px rgba(76, 175, 79, 0.25) !important;
+}
+
+/* Sidebar links in light mode */
+html.light aside {
+  background-color: #FFFFFF !important;
+}
+
+html.light aside a:not([class*="bg-brand-500"]) {
+  color: #374151 !important;
+}
+
+html.light aside a:not([class*="bg-brand-500"]):hover {
+  color: #111827 !important;
+  background-color: #F1F5F9 !important;
+}
+
+html.light aside a.bg-blue-600 {
+  background-color: #E8F5E9 !important;
+  color: #2E7D32 !important;
+  font-weight: 700 !important;
+  border: 1px solid #C8E6C9 !important;
+}
+
+html.light aside a[class*="text-blue-400"] {
+  background-color: #E8F5E9 !important;
+  color: #2E7D32 !important;
+  border-color: #A5D6A7 !important;
 }
 
 /* Glass panels in light mode */
-html.light .glass-panel {
-  background: rgba(255, 255, 255, 0.9) !important;
-  border-color: rgba(0, 0, 0, 0.08) !important;
+html.light .glass-panel,
+html.light .glass-card {
+  background: #FFFFFF !important;
+  border-color: #E4E7EC !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
 }
 
-html.light .glass-card {
-  background: rgba(255, 255, 255, 0.95) !important;
-  border-color: rgba(0, 0, 0, 0.06) !important;
+/* ========================================================================= */
+/* DARK MODE NEXCENT TINT                                                    */
+/* ========================================================================= */
+
+html.dark .bg-blue-600 {
+  background-color: #388E3C !important;
+}
+
+html.dark .hover\:bg-blue-500:hover {
+  background-color: #4CAF4F !important;
+}
+
+html.dark .text-blue-400 {
+  color: #4ADE80 !important;
+}
+
+html.dark .text-cyan-400 {
+  color: #86EFAC !important;
+}
+
+html.dark aside a.bg-blue-600 {
+  background-color: rgba(76, 175, 79, 0.25) !important;
+  color: #4ADE80 !important;
+  border: 1px solid rgba(76, 175, 79, 0.4) !important;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #FFFFFF !important;
+}
+
+html.dark p {
+  color: #CBD5E1 !important;
 }
