@@ -76,7 +76,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onCloseMobile })
               <Compass className="w-4 h-4 text-cyan-400" />
               <span>Explore Topics</span>
             </NavLink>
-            <NavLink to="/curriculum" onClick={onCloseMobile} className={regularLinkClass}>
+            <NavLink to="/learning-paths" onClick={onCloseMobile} className={regularLinkClass}>
               <BookOpen className="w-4 h-4 text-indigo-400" />
               <span>Learning Paths</span>
             </NavLink>
@@ -119,7 +119,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onCloseMobile })
               <BookMarked className="w-4 h-4 text-rose-400" />
               <span>Research & Papers</span>
             </NavLink>
-            <NavLink to="/trends" onClick={onCloseMobile} className={regularLinkClass}>
+            <NavLink to="/pulse" onClick={onCloseMobile} className={regularLinkClass}>
               <Radio className="w-4 h-4 text-cyan-400" />
               <span>Industry Pulse</span>
             </NavLink>
@@ -142,7 +142,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onCloseMobile })
               <Bookmark className="w-4 h-4 text-amber-400" />
               <span>Bookmarks</span>
             </NavLink>
-            <NavLink to="/notes" onClick={onCloseMobile} className={regularLinkClass}>
+            <NavLink to="/progress" onClick={onCloseMobile} className={regularLinkClass}>
               <BarChart2 className="w-4 h-4 text-blue-400" />
               <span>Progress</span>
             </NavLink>

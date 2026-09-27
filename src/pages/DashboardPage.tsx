@@ -193,7 +193,7 @@ export const DashboardPage: React.FC = () => {
                 <span className="text-blue-400">📘</span>
                 <span>Your Learning Journey</span>
               </h2>
-              <Link to="/notes" className="text-xs text-blue-400 hover:text-blue-300 font-medium">
+              <Link to="/progress" className="text-xs text-blue-400 hover:text-blue-300 font-medium">
                 View All →
               </Link>
             </div>
@@ -276,7 +276,7 @@ export const DashboardPage: React.FC = () => {
               Structured paths to go from fundamentals to production. Choose a path and start building.
             </p>
           </div>
-          <Link to="/curriculum" className="text-xs text-blue-400 hover:text-blue-300 font-medium">
+          <Link to="/learning-paths" className="text-xs text-blue-400 hover:text-blue-300 font-medium">
             View All Paths →
           </Link>
         </div>

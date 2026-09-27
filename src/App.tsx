@@ -17,6 +17,9 @@ import { NotesBookmarksPage } from './pages/NotesBookmarksPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { TrendsPage } from './pages/TrendsPage';
 import { InterviewQuestionsPage } from './pages/InterviewQuestionsPage';
+import { LearningPathsPage } from './pages/LearningPathsPage';
+import { IndustryPulsePage } from './pages/IndustryPulsePage';
+import { ProgressDashboardPage } from './pages/ProgressDashboardPage';
 
 export const App: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -65,6 +68,7 @@ export const App: React.FC = () => {
               <Route path="/curriculum" element={<CurriculumPage />} />
               <Route path="/curriculum/:trackSlug" element={<CurriculumPage />} />
               <Route path="/curriculum/:trackSlug/:lessonId" element={<LessonDetailPage />} />
+              <Route path="/learning-paths" element={<LearningPathsPage />} />
               <Route path="/interview-questions" element={<InterviewQuestionsPage />} />
               <Route path="/questions" element={<InterviewQuestionsPage />} />
               <Route path="/lab" element={<LabProjectsPage />} />
@@ -72,8 +76,10 @@ export const App: React.FC = () => {
               <Route path="/system-design" element={<SystemDesignPage />} />
               <Route path="/jargon" element={<JargonDictionaryPage />} />
               <Route path="/trends" element={<TrendsPage />} />
+              <Route path="/pulse" element={<IndustryPulsePage />} />
               <Route path="/research" element={<ResearchLibraryPage />} />
               <Route path="/notes" element={<NotesBookmarksPage />} />
+              <Route path="/progress" element={<ProgressDashboardPage />} />
               <Route path="/settings" element={<SettingsPage />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
