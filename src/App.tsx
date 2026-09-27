@@ -15,6 +15,7 @@ import { JargonDictionaryPage } from './pages/JargonDictionaryPage';
 import { ResearchLibraryPage } from './pages/ResearchLibraryPage';
 import { NotesBookmarksPage } from './pages/NotesBookmarksPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { TrendsPage } from './pages/TrendsPage';
 
 export const App: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -67,6 +68,7 @@ export const App: React.FC = () => {
               <Route path="/coding" element={<CodingPracticePage />} />
               <Route path="/system-design" element={<SystemDesignPage />} />
               <Route path="/jargon" element={<JargonDictionaryPage />} />
+              <Route path="/trends" element={<TrendsPage />} />
               <Route path="/research" element={<ResearchLibraryPage />} />
               <Route path="/notes" element={<NotesBookmarksPage />} />
               <Route path="/settings" element={<SettingsPage />} />
