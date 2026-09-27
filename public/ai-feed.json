@@ -1,0 +1,595 @@
+{
+  "checkedAt": "2026-09-27T08:03:58.877Z",
+  "sources": [
+    {
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "category": "Models & tools",
+      "status": "ok",
+      "lastSuccessAt": "2026-09-27T08:03:58.877Z"
+    },
+    {
+      "name": "Google Research",
+      "url": "https://research.google/blog/rss/",
+      "category": "Research",
+      "status": "ok",
+      "lastSuccessAt": "2026-09-27T08:03:58.877Z"
+    },
+    {
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "category": "Research",
+      "status": "ok",
+      "lastSuccessAt": "2026-09-27T08:03:58.877Z"
+    },
+    {
+      "name": "Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/feed/",
+      "category": "Research",
+      "status": "ok",
+      "lastSuccessAt": "2026-09-27T08:03:58.877Z"
+    }
+  ],
+  "items": [
+    {
+      "title": "Automating coherent long-form video generation",
+      "url": "https://research.google/blog/coherent-long-form-video-generation/",
+      "publishedAt": "2026-09-24T19:40:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "publishedAt": "2026-09-24T16:20:39.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "publishedAt": "2026-09-24T14:08:57.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+      "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "publishedAt": "2026-09-23T18:41:40.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Offloaded inference for real-world physical AI robotics",
+      "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "publishedAt": "2026-09-23T16:01:36.000Z",
+      "source": "Microsoft Research",
+      "category": "Research"
+    },
+    {
+      "title": "Advancing Private AI Compute with secure, server-side memory",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "publishedAt": "2026-09-23T16:00:57.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Gemini 3.8 text-to-speech says hello",
+      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+      "publishedAt": "2026-09-23T15:25:14.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+      "url": "https://huggingface.co/blog/evaleval-aisi",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Transformers now runs llama.cpp quants",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "url": "https://huggingface.co/blog/omlx",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Improving synthesis prediction of small molecules at scale with RetroChimera",
+      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+      "publishedAt": "2026-09-21T15:30:19.000Z",
+      "source": "Microsoft Research",
+      "category": "Research"
+    },
+    {
+      "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "tokenizers v1: encode, decode and scaling, measured",
+      "url": "https://huggingface.co/blog/tokenizers-v1",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "MilleMiglia: A realistic instance generator for middle-mile logistics",
+      "url": "https://research.google/blog/millemiglia-a-realistic-instance-generator-for-middle-mile-logistics/",
+      "publishedAt": "2026-09-18T17:46:09.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "The future of practice: Enabling teachers to create learning interactives with generative UI",
+      "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+      "publishedAt": "2026-09-17T20:45:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
+      "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+      "publishedAt": "2026-09-15T20:00:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "publishedAt": "2026-09-15T17:05:57.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Your Agent Aced the Task. Will It Do It Again?",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "publishedAt": "2026-09-15T16:00:44.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
+      "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+      "publishedAt": "2026-09-10T22:50:22.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+      "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "url": "https://huggingface.co/blog/gradio-workflow-1111",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "publishedAt": "2026-09-08T14:00:15.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Transfer learning for genomic prediction in underrepresented populations",
+      "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
+      "publishedAt": "2026-09-03T18:20:31.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "A connectomics milestone: Mapping the complete male fruit fly brain",
+      "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
+      "publishedAt": "2026-09-03T16:00:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+      "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "publishedAt": "2026-09-03T15:02:08.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+      "url": "https://huggingface.co/blog/Hcompany/neomme",
+      "publishedAt": "2026-09-03T13:13:48.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+      "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Give Your Coding Agents a Memory You Own",
+      "url": "https://huggingface.co/blog/funes",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+      "url": "https://huggingface.co/blog/train-to-paint-with-code",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Proactive cyber defense for governments and enterprises",
+      "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "publishedAt": "2026-09-02T16:24:24.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+      "publishedAt": "2026-09-02T16:18:31.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+      "url": "https://huggingface.co/blog/allenai/benchmirt",
+      "publishedAt": "2026-09-01T21:39:07.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Mapping global methane emissions from space with deep learning",
+      "url": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
+      "publishedAt": "2026-09-01T18:40:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Introducing agentic video understanding with Gemini",
+      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "publishedAt": "2026-09-01T17:08:51.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+      "url": "https://huggingface.co/blog/webgpu-kernels",
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
+      "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
+      "publishedAt": "2026-08-31T17:19:40.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models",
+      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "publishedAt": "2026-08-31T16:00:00.000Z",
+      "source": "Microsoft Research",
+      "category": "Research"
+    },
+    {
+      "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+      "publishedAt": "2026-08-28T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Planetary prediction engine: Automating global models via Earth AI",
+      "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+      "publishedAt": "2026-08-27T17:37:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Gemini Omni 1.1 Flash lets you build with more control",
+      "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+      "publishedAt": "2026-08-27T16:11:32.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Piloting the world's first double-blind AI evaluations",
+      "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+      "publishedAt": "2026-08-27T12:59:16.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "GlucoFM: Foundation model for continuous glucose monitoring",
+      "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/",
+      "publishedAt": "2026-08-26T18:42:43.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+      "publishedAt": "2026-08-26T17:01:00.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+      "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+      "publishedAt": "2026-08-26T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "AgentHands: Generating interactive hand gestures for spatially grounded agent conversations in XR",
+      "url": "https://research.google/blog/agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr/",
+      "publishedAt": "2026-08-25T19:10:59.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Granite 4.2 LLMs: How They're Built",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "publishedAt": "2026-08-25T15:14:14.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "publishedAt": "2026-08-25T11:39:24.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+      "url": "https://huggingface.co/blog/gradio-workflow-guide",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "An AI tool for prioritizing candidate biomarkers from wearable sensor data",
+      "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data/",
+      "publishedAt": "2026-08-21T17:02:24.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+      "publishedAt": "2026-08-21T11:59:48.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "How mobility gives language models a deeper understanding of place",
+      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "publishedAt": "2026-08-21T10:54:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code",
+      "url": "https://huggingface.co/blog/pwc-search",
+      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Measuring benchmark optimization in speech recognition",
+      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "publishedAt": "2026-08-20T16:52:57.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Broadening access to Skala creates a faster path to predictive DFT",
+      "url": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
+      "publishedAt": "2026-08-20T16:00:00.000Z",
+      "source": "Microsoft Research",
+      "category": "Research"
+    },
+    {
+      "title": "How Much Memory Does Your Agent Actually Need?",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+      "publishedAt": "2026-08-18T18:09:38.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+      "url": "https://huggingface.co/blog/multi-vector-encoder",
+      "publishedAt": "2026-08-18T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Same Cluster, 33 Points More Utilization: What Changed Was the Order",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+      "publishedAt": "2026-08-17T19:46:21.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Seeing beyond BMI: Estimating cardiometabolic risk with smartphone imagery",
+      "url": "https://research.google/blog/seeing-beyond-bmi-estimating-cardiometabolic-risk-with-smartphone-imagery/",
+      "publishedAt": "2026-08-17T10:34:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "State of Open Models: Summer 2026 Observations",
+      "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+      "publishedAt": "2026-08-14T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "publishedAt": "2026-08-13T17:16:04.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Introducing Gemini 3.7 Flash",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+      "publishedAt": "2026-08-13T17:04:18.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "What We Learned by Reproducing 2,200 papers from ICML",
+      "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "publishedAt": "2026-08-13T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+      "publishedAt": "2026-08-12T16:14:36.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "MindTopo reveals VLMs&#8217; spatial reasoning abilities",
+      "url": "https://www.microsoft.com/en-us/research/blog/mindtopo-reveals-vlms-spatial-reasoning-abilities/",
+      "publishedAt": "2026-08-12T16:00:00.000Z",
+      "source": "Microsoft Research",
+      "category": "Research"
+    },
+    {
+      "title": "Putting sign language AI into users’ hands",
+      "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+      "publishedAt": "2026-08-12T14:01:59.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Empty shelves or lost keys? Recall is the bottleneck for parametric factuality",
+      "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/",
+      "publishedAt": "2026-08-12T09:51:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Advancing AMIE towards expert-level audio-visual clinical consultations",
+      "url": "https://research.google/blog/advancing-amie-towards-expert-level-audio-visual-clinical-consultations/",
+      "publishedAt": "2026-08-11T17:04:00.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Introducing CARE-X: Towards Clinically Useful Radiology VLMs with Auxiliary Supervision, Reward-Aligned Learning, and Tool-Augmented Measurement",
+      "url": "https://www.microsoft.com/en-us/research/blog/introducing-care-x-towards-clinically-useful-radiology-vlms-with-auxiliary-supervision-reward-aligned-learning-and-tool-augmented-measurement/",
+      "publishedAt": "2026-08-11T16:00:00.000Z",
+      "source": "Microsoft Research",
+      "category": "Research"
+    },
+    {
+      "title": "Thinking of ACE? We Can Do It with Fewer Tokens",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+      "publishedAt": "2026-08-11T13:37:10.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Build Low-Latency Multilingual Voice Agents: Open Weights & Full Deployment Control with NVIDIA Magpie TTS",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "publishedAt": "2026-08-10T16:25:36.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Making Knowledge Distillation Cheap Enough to Run at Scale",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
+      "publishedAt": "2026-08-10T10:05:36.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "publishedAt": "2026-08-10T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "publishedAt": "2026-08-06T15:06:15.000Z",
+      "source": "Google DeepMind",
+      "category": "Research"
+    },
+    {
+      "title": "Baseten on Hugging Face Inference Providers 🔥",
+      "url": "https://huggingface.co/blog/baseten",
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
+    {
+      "title": "Orchard: An open framework for scalable agentic AI",
+      "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "publishedAt": "2026-08-03T16:00:00.000Z",
+      "source": "Microsoft Research",
+      "category": "Research"
+    },
+    {
+      "title": "Science One Framework: A verifiable autonomous research framework via Chain-of-Evidence",
+      "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+      "publishedAt": "2026-07-30T20:36:36.000Z",
+      "source": "Google Research",
+      "category": "Research"
+    },
+    {
+      "title": "Echoverse: Deep, evolving environments for computer-use agents",
+      "url": "https://www.microsoft.com/en-us/research/blog/echoverse-deep-evolving-environments-for-computer-use-agents/",
+      "publishedAt": "2026-07-30T17:00:00.000Z",
+      "source": "Microsoft Research",
+      "category": "Research"
+    },
+    {
+      "title": "EvoLib: Turning experience into evolving knowledge",
+      "url": "https://www.microsoft.com/en-us/research/blog/evolib-turning-experience-into-evolving-knowledge/",
+      "publishedAt": "2026-07-30T16:00:00.000Z",
+      "source": "Microsoft Research",
+      "category": "Research"
+    },
+    {
+      "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+      "publishedAt": "2026-07-30T15:09:09.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    }
+  ]
+}

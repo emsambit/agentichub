@@ -158,6 +158,10 @@ export const LessonDetailPage: React.FC = () => {
       </div>
 
       {/* Main Technical Theory */}
+      {lesson.resources && <section className="rounded-2xl border border-slate-800 bg-dark-900 p-6 space-y-3">
+        <h2 className="font-bold text-white">Official learning resources</h2>
+        {lesson.resources.map(resource => <a key={resource.url} href={resource.url} target="_blank" rel="noopener noreferrer" className="block text-sm text-cyan-300 hover:underline">{resource.title} ↗</a>)}
+      </section>}
       <div className="rounded-2xl border border-slate-800 bg-dark-900/80 p-6 sm:p-8 space-y-6">
         <h2 className="text-xl font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
           <Sparkles className="w-5 h-5 text-brand-400" />

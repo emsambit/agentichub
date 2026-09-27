@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main, master ]
+  schedule:
+    - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -29,6 +31,19 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Restore previous feed
+        uses: actions/cache@v4
+        with:
+          path: public/ai-feed.json
+          key: ai-feed-${{ github.run_id }}
+          restore-keys: ai-feed-
+
+      - name: Refresh publisher feeds
+        run: npm run feed:update
+
+      - name: Test feed parsing
+        run: npm test
 
       - name: Build application
         run: npm run build
