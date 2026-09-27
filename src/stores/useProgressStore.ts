@@ -47,6 +47,19 @@ const defaultState: UserProgressState = {
   theme: 'dark',
 };
 
+export function applyTheme(theme: 'dark' | 'light') {
+  if (typeof document === 'undefined') return;
+  if (theme === 'dark') {
+    document.documentElement.classList.add('dark');
+    document.documentElement.classList.remove('light');
+    document.documentElement.style.colorScheme = 'dark';
+  } else {
+    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.add('light');
+    document.documentElement.style.colorScheme = 'light';
+  }
+}
+
 export function getStoredProgress(): UserProgressState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -71,12 +84,28 @@ export function useProgress() {
   const [progress, setProgress] = useState<UserProgressState>(getStoredProgress);
 
   useEffect(() => {
+    applyTheme(progress.theme || 'dark');
+  }, [progress.theme]);
+
+  useEffect(() => {
     const handleUpdate = () => {
-      setProgress(getStoredProgress());
+      const current = getStoredProgress();
+      setProgress(current);
+      applyTheme(current.theme || 'dark');
     };
     window.addEventListener('agentichub_progress_updated', handleUpdate);
     return () => window.removeEventListener('agentichub_progress_updated', handleUpdate);
   }, []);
+
+  const toggleTheme = () => {
+    const newTheme: 'dark' | 'light' = progress.theme === 'dark' ? 'light' : 'dark';
+    const updated = {
+      ...progress,
+      theme: newTheme,
+    };
+    saveStoredProgress(updated);
+    applyTheme(newTheme);
+  };
 
   const toggleLessonCompleted = (lessonId: string) => {
     const isCompleted = progress.completedLessons.includes(lessonId);
@@ -199,5 +228,6 @@ export function useProgress() {
     exportData,
     importData,
     resetAllProgress,
+    toggleTheme,
   };
 }

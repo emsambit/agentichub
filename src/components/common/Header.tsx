@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Flame, Bell, Sun, Menu, Sparkles } from 'lucide-react';
+import { Search, Flame, Bell, Sun, Moon, Menu, Sparkles } from 'lucide-react';
 import { profileMeta } from '../../content/profile/sambitProfile';
+import { useProgress } from '../../stores/useProgressStore';
 
 interface HeaderProps {
   onOpenSearch: () => void;
@@ -9,6 +10,8 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onToggleMobileNav }) => {
+  const { progress, toggleTheme } = useProgress();
+  const isDark = progress.theme !== 'light';
   return (
     <header className="sticky top-0 z-30 h-16 border-b border-slate-800/80 bg-dark-950/90 backdrop-blur-xl flex items-center justify-between px-4 sm:px-6">
       {/* Left: Mobile Toggle & Brand Logo */}
@@ -87,10 +90,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onToggleMobileNav 
 
         {/* Theme Toggle Button */}
         <button
-          className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800/80 transition-colors"
-          title="Toggle Theme"
+          onClick={toggleTheme}
+          className="p-2 rounded-xl text-slate-400 hover:text-white dark:hover:text-white hover:bg-slate-800/80 transition-all group"
+          title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+          aria-label="Toggle Theme"
         >
-          <Sun className="w-4 h-4" />
+          {isDark ? (
+            <Sun className="w-4 h-4 text-amber-400 group-hover:rotate-45 transition-transform" />
+          ) : (
+            <Moon className="w-4 h-4 text-blue-500 group-hover:-rotate-12 transition-transform" />
+          )}
         </button>
 
         {/* Profile Avatar */}
