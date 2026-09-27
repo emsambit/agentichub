@@ -79,3 +79,14 @@ The repository is configured for zero-friction continuous deployment via GitHub 
 ---
 
 © Sambit Baliarsingh. Built with ⚡ for high technical depth and lifelong learning.
+# AI Learning Pulse and new learning tracks
+
+JAX and Jev lessons appear in the curriculum, global lesson search, and dashboard learning resources. Each includes official links, a practical exercise and a quiz.
+
+The dashboard and AI Trends page load `public/ai-feed.json`. Run `npm run feed:update` to collect RSS/Atom headlines from Hugging Face, Google Research, Google DeepMind and Microsoft Research. Only titles, source links and dates are stored; article bodies are not republished. Entries are deduplicated and sorted by publication time, not by popularity.
+
+The Pages workflow refreshes feeds before deployment and is scheduled hourly at minute 17. This schedule becomes active after merging to the default branch. GitHub may delay scheduled runs or disable schedules in inactive public repositories. The UI checks for a new snapshot every five minutes and offers a manual refresh; this reloads the published snapshot, not the upstream feeds.
+
+Failed sources retain their last cached entries and show an unavailable status. GitHub Actions caches the previous snapshot between runs; the committed snapshot is the fallback if no cache exists. The UI reports delayed snapshots after three hours. No provider credentials or browser CORS proxies are required.
+
+Validation: `npm test` covers RSS/Atom parsing, URL safety, malformed responses, deduplication and ordering. `npm run build` checks TypeScript and produces the static Pages site. Pull requests run both checks without deploying.

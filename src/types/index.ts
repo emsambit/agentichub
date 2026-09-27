@@ -64,6 +64,7 @@ export interface QuizQuestion {
 }
 
 export interface Lesson {
+  resources?: { title: string; url: string }[];
   id: string;
   moduleId: string;
   trackId: string;

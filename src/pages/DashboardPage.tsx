@@ -1,3 +1,4 @@
+import { LearningPulse, LearningResources } from '../components/learning/LearningPulse';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -442,10 +443,10 @@ export const DashboardPage: React.FC = () => {
             <div>
               <h2 className="text-base font-bold text-white flex items-center gap-2">
                 <TrendingUp className="w-4 h-4 text-cyan-400" />
-                <span>Trending Now</span>
+                <span>Topics to Explore</span>
               </h2>
               <p className="text-xs text-slate-400">
-                Popular topics, emerging trends and what the community is learning.
+                Curated engineering topics to build your next skill.
               </p>
             </div>
             <Link to="/trends" className="text-xs text-blue-400 hover:text-blue-300 font-medium">
@@ -614,66 +615,9 @@ export const DashboardPage: React.FC = () => {
       {/* ========================================================================= */}
       {/* 4. BOTTOM 3-COLUMN STRIP: NEWS + RESEARCH SPOTLIGHT + CONTINUE LEARNING  */}
       {/* ========================================================================= */}
+      <LearningResources />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Col 1: Latest in AI/ML/Data World */}
-        <div className="rounded-3xl border border-slate-800/90 bg-dark-900/80 p-5 space-y-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-xs font-bold text-white">
-              <Newspaper className="w-4 h-4 text-blue-400" />
-              <span>Latest in AI/ML/Data World</span>
-            </div>
-            <Link to="/trends" className="text-[11px] text-blue-400 hover:text-blue-300 font-medium">
-              View All News →
-            </Link>
-          </div>
-
-          <div className="space-y-3">
-            {/* News 1 */}
-            <div className="p-3 rounded-xl bg-dark-850/80 border border-slate-800/80 hover:border-slate-700 transition-colors flex items-start gap-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-950/80 border border-emerald-500/30 flex items-center justify-center text-xs font-bold text-emerald-400 flex-shrink-0">
-                AI
-              </div>
-              <div className="min-w-0">
-                <h4 className="text-xs font-semibold text-white truncate">
-                  OpenAI releases GPT-4.5 with stronger reasoning and tool use
-                </h4>
-                <p className="text-[10px] text-slate-500 font-mono mt-0.5">
-                  OpenAI · Mar 1, 2024
-                </p>
-              </div>
-            </div>
-
-            {/* News 2 */}
-            <div className="p-3 rounded-xl bg-dark-850/80 border border-slate-800/80 hover:border-slate-700 transition-colors flex items-start gap-3">
-              <div className="w-8 h-8 rounded-lg bg-amber-950/80 border border-amber-500/30 flex items-center justify-center text-xs font-bold text-amber-400 flex-shrink-0">
-                A\
-              </div>
-              <div className="min-w-0">
-                <h4 className="text-xs font-semibold text-white truncate">
-                  Anthropic introduces Claude 3 family with expanded capabilities
-                </h4>
-                <p className="text-[10px] text-slate-500 font-mono mt-0.5">
-                  Anthropic · Feb 28, 2024
-                </p>
-              </div>
-            </div>
-
-            {/* News 3 */}
-            <div className="p-3 rounded-xl bg-dark-850/80 border border-slate-800/80 hover:border-slate-700 transition-colors flex items-start gap-3">
-              <div className="w-8 h-8 rounded-lg bg-rose-950/80 border border-rose-500/30 flex items-center justify-center text-xs font-bold text-rose-400 flex-shrink-0">
-                DB
-              </div>
-              <div className="min-w-0">
-                <h4 className="text-xs font-semibold text-white truncate">
-                  Databricks unveils new lakehouse features for AI workloads
-                </h4>
-                <p className="text-[10px] text-slate-500 font-mono mt-0.5">
-                  Databricks · Feb 27, 2024
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <LearningPulse compact />
 
         {/* Col 2: Research & Papers Spotlight */}
         <div className="rounded-3xl border border-slate-800/90 bg-dark-900/80 p-5 space-y-4">

@@ -1,6 +1,8 @@
 import { Track } from '../../types';
+import { newTracks } from './newTracks';
 
 export const allTracks: Track[] = [
+  ...newTracks,
   {
     id: "agentic-ai",
     title: "Agentic AI & Multi-Agent Systems",
