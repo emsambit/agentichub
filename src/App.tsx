@@ -16,6 +16,7 @@ import { ResearchLibraryPage } from './pages/ResearchLibraryPage';
 import { NotesBookmarksPage } from './pages/NotesBookmarksPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { TrendsPage } from './pages/TrendsPage';
+import { InterviewQuestionsPage } from './pages/InterviewQuestionsPage';
 
 export const App: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -64,6 +65,8 @@ export const App: React.FC = () => {
               <Route path="/curriculum" element={<CurriculumPage />} />
               <Route path="/curriculum/:trackSlug" element={<CurriculumPage />} />
               <Route path="/curriculum/:trackSlug/:lessonId" element={<LessonDetailPage />} />
+              <Route path="/interview-questions" element={<InterviewQuestionsPage />} />
+              <Route path="/questions" element={<InterviewQuestionsPage />} />
               <Route path="/lab" element={<LabProjectsPage />} />
               <Route path="/coding" element={<CodingPracticePage />} />
               <Route path="/system-design" element={<SystemDesignPage />} />

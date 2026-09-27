@@ -17,7 +17,8 @@ import {
   Bookmark,
   BarChart2,
   Settings,
-  ArrowRight
+  ArrowRight,
+  HelpCircle
 } from 'lucide-react';
 import { profileMeta } from '../../content/profile/sambitProfile';
 
@@ -102,6 +103,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ isMobileOpen, onCloseMobile })
             <NavLink to="/system-design" onClick={onCloseMobile} className={regularLinkClass}>
               <Network className="w-4 h-4 text-rose-400" />
               <span>System Design</span>
+            </NavLink>
+            <NavLink to="/interview-questions" onClick={onCloseMobile} className={regularLinkClass}>
+              <HelpCircle className="w-4 h-4 text-amber-400" />
+              <span>Interview Bank (261 Qs)</span>
             </NavLink>
           </div>
 

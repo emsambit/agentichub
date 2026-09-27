@@ -67,6 +67,14 @@ export const DashboardPage: React.FC = () => {
                 </Link>
 
                 <Link
+                  to="/interview-questions"
+                  className="px-4 py-2.5 rounded-xl border border-amber-500/50 bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 hover:text-white text-xs font-semibold flex items-center gap-2 transition-all shadow-lg shadow-amber-500/10"
+                >
+                  <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                  <span>261 AI Questions & Answers</span>
+                </Link>
+
+                <Link
                   to="/trends"
                   className="px-4 py-2.5 rounded-xl border border-slate-700/80 bg-dark-800/80 hover:bg-dark-750 text-slate-200 hover:text-white text-xs font-semibold flex items-center gap-2 transition-colors"
                 >
