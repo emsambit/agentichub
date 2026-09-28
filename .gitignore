@@ -28,3 +28,7 @@ lerna-debug.log*
 
 # TypeScript build cache
 *.tsbuildinfo
+
+# Firebase cache
+.firebase/
+

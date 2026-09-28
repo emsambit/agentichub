@@ -1,10 +1,11 @@
-# Sambit's AI Engineering Academy & Learning OS (`agentichub`)
+# Sambit's AI Engineering Academy & Learning OS (`agentichub` / `llmlarge`)
 
 > **Personal continuous-learning operating system & Staff/Principal Data & AI Engineering platform.**  
-> Crafted with React, TypeScript, Vite, and Tailwind CSS. Built for GitHub Pages deployment.
+> Crafted with React, TypeScript, Vite, and Tailwind CSS. Built for Firebase Hosting deployment.
 
-[![Deploy to GitHub Pages](https://github.com/emsambit/agentichub/actions/workflows/deploy.yml/badge.svg)](https://github.com/emsambit/agentichub/actions/workflows/deploy.yml)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-6366F1?style=flat&logo=github)](https://emsambit.github.io/agentichub/)
+[![Deploy to Firebase Hosting](https://github.com/emsambit/llmlarge/actions/workflows/deploy.yml/badge.svg)](https://github.com/emsambit/llmlarge/actions/workflows/deploy.yml)
+[![Live Site](https://img.shields.io/badge/Live%20Site-llmlarge.com-10B981?style=flat&logo=firebase)](https://llmlarge.com)
+[![Firebase Default URL](https://img.shields.io/badge/Firebase-magicmirror--205517.web.app-FFA000?style=flat&logo=firebase)](https://magicmirror-205517.web.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -64,11 +65,14 @@ npm run preview
 
 ---
 
-## 🌐 GitHub Pages Deployment
+## 🌐 Firebase Hosting & Custom Domain Deployment
 
-The repository is configured for zero-friction continuous deployment via GitHub Actions:
-- On push to `main` or `master`, `.github/workflows/deploy.yml` builds the Vite bundle and deploys the static `dist/` directory to GitHub Pages.
-- Client-side routing is handled seamlessly with zero server dependency.
+The repository is configured for automated CI/CD via GitHub Actions and Firebase Hosting:
+- On push to `main`, `.github/workflows/deploy.yml` runs tests, refreshes research feeds, compiles the production bundle, and deploys to Firebase Hosting site `magicmirror-205517`.
+- Live at:
+  - Custom domain: [https://llmlarge.com](https://llmlarge.com)
+  - Firebase app URL: [https://magicmirror-205517.web.app](https://magicmirror-205517.web.app)
+- Client-side routing is handled with HashRouter and SPA rewrites for zero server dependency.
 
 ---
 

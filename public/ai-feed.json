@@ -1,36 +1,43 @@
 {
-  "checkedAt": "2026-09-27T08:03:58.877Z",
+  "checkedAt": "2026-09-28T15:21:09.600Z",
   "sources": [
     {
       "name": "Hugging Face",
       "url": "https://huggingface.co/blog/feed.xml",
       "category": "Models & tools",
       "status": "ok",
-      "lastSuccessAt": "2026-09-27T08:03:58.877Z"
+      "lastSuccessAt": "2026-09-28T15:21:09.600Z"
     },
     {
       "name": "Google Research",
       "url": "https://research.google/blog/rss/",
       "category": "Research",
       "status": "ok",
-      "lastSuccessAt": "2026-09-27T08:03:58.877Z"
+      "lastSuccessAt": "2026-09-28T15:21:09.600Z"
     },
     {
       "name": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
       "category": "Research",
       "status": "ok",
-      "lastSuccessAt": "2026-09-27T08:03:58.877Z"
+      "lastSuccessAt": "2026-09-28T15:21:09.600Z"
     },
     {
       "name": "Microsoft Research",
       "url": "https://www.microsoft.com/en-us/research/feed/",
       "category": "Research",
       "status": "ok",
-      "lastSuccessAt": "2026-09-27T08:03:58.877Z"
+      "lastSuccessAt": "2026-09-28T15:21:09.600Z"
     }
   ],
   "items": [
+    {
+      "title": "Holo4: powering generalist computer-use agents",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "publishedAt": "2026-09-28T09:44:05.000Z",
+      "source": "Hugging Face",
+      "category": "Models & tools"
+    },
     {
       "title": "Automating coherent long-form video generation",
       "url": "https://research.google/blog/coherent-long-form-video-generation/",
@@ -583,13 +590,6 @@
       "publishedAt": "2026-07-30T16:00:00.000Z",
       "source": "Microsoft Research",
       "category": "Research"
-    },
-    {
-      "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
-      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
-      "publishedAt": "2026-07-30T15:09:09.000Z",
-      "source": "Hugging Face",
-      "category": "Models & tools"
     }
   ]
 }
